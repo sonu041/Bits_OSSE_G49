@@ -15,6 +15,11 @@ if __name__ == "__main__":
 
     args = ap.parse_args()
     pw_gen = PwGenerator()      # initialise the class
+
+    # pass the CLI argument length to the generator to
+    # generate a password of supplied length
+    # ./pw.py -l 50 --> returns a pw 50 characters long
+    
     pw = pw_gen.generate(       # generate a password
         length=args.len,
         include_numbers=args.num
