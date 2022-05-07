@@ -17,4 +17,4 @@ if __name__ == "__main__":
     pw_gen = PwGenerator()      # initialise the class
     pw = pw_gen.generate()      # generate a password
 
-    print(pw)                   # print the password
+    print(pw)                   # print the password add comment 2021mt93216
