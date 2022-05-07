@@ -13,6 +13,15 @@ if __name__ == "__main__":
         type=int, default=15, metavar="INT"
     )
 
+    # add a new CLI argument to include numbers
+    # in the randomly generated password
+    # Usage: ./pw.py -n OR ./pw.py --num
+
+    ap.add_argument(
+        "-n", "--num", help="Include numericals",
+        default=False, action="store_true"
+    )
+
     args = ap.parse_args()
     pw_gen = PwGenerator()      # initialise the class
 
