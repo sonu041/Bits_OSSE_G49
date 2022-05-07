@@ -16,7 +16,6 @@ if __name__ == "__main__":
     args = ap.parse_args()
     pw_gen = PwGenerator()      # initialise the class
     pw = pw_gen.generate(       # generate a password
-        length=args.len
         length=args.len,
         include_numbers=args.num
     )
