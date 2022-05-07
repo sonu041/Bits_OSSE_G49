@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from argparse import ArgumentParser
+from src.pwgen import PwGenerator
 
 if __name__ == "__main__":
 
@@ -13,4 +14,7 @@ if __name__ == "__main__":
     )
 
     args = ap.parse_args()
-    print(args)
+    pw_gen = PwGenerator()      # initialise the class
+    pw = pw_gen.generate()      # generate a password
+
+    print(pw)                   # print the password
