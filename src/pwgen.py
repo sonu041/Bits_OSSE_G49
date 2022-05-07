@@ -2,10 +2,15 @@ import random
 
 UPPER_CASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 LOWER_CASE = "abcdefghijklmnopqrstuvwxyz"
+NUMBERS = "0123456789"
 
 class PwGenerator:
 
-    def generate(self, length=15):
+    def generate(
+            self,
+            length=15,
+            include_numbers=False
+        ):
         """
         Returns a random password
         
@@ -13,6 +18,7 @@ class PwGenerator:
             length (int): Length of the password
         """
         char_set = UPPER_CASE + LOWER_CASE
+        
         chars = list(char_set)
         
         iterations = len(chars) * 5     # number of times to shuffle
