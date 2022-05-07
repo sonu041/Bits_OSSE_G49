@@ -19,6 +19,9 @@ class PwGenerator:
         """
         char_set = UPPER_CASE + LOWER_CASE
         
+          if include_numbers is True:
+            char_set = char_set + NUMBERS
+        
         chars = list(char_set)
         
         iterations = len(chars) * 5     # number of times to shuffle
