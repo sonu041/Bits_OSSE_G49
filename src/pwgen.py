@@ -22,4 +22,4 @@ class PwGenerator:
         pw = chars[:length]
 
         pw_str = "".join(pw)            # join the characters into a string
-        return pw_str                   # return password
+        return pw_str                   # return password adding comment 2021mt93216
