@@ -1,3 +1,17 @@
+# OSSE Assignment 4 - Group 49
+
+This repo is a submission for **Assignment 4** of OSSE, M.Tech, BITS Pilani
+
+It's a collaborative effort by students of Group 49, OSSE:
+
+* Praveen (2021mt93212@wilp.bits-pilani.ac.in)
+* Shuvankar Sarkar (2021mt93214@wilp.bits-pilani.ac.in)
+* Sowjanya (2021mt93216@wilp.bits-pilani.ac.in)
+* Harish T (2021mt93228@wilp.bits-pilani.ac.in)
+* Sananda Dalapati (2021mt93224@wilp.bits-pilani.ac.in)
+
+
+
 # pw - A random password generator
 
 `pw` is a random password generator written in Python3. It can generate:
@@ -39,14 +53,3 @@ r(y>GM)@[_#.NE72<PCf
 ## Github Page
 
 A Github page for this project is located here [here](https://sonu041.github.io/Bits_OSSE_G49/)
-
-
-## Team
-
-This repo was a collaborative effort by students of Group 49, OSSE
-
-* Praveen (2021mt93212@wilp.bits-pilani.ac.in)
-* Shuvankar Sarkar (2021mt93214@wilp.bits-pilani.ac.in)
-* Sowjanya (2021mt93216@wilp.bits-pilani.ac.in)
-* Harish T (2021mt93228@wilp.bits-pilani.ac.in)
-* Sananda Dalapati (2021mt93224@wilp.bits-pilani.ac.in)
