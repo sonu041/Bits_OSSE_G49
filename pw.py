@@ -27,6 +27,11 @@ if __name__ == "__main__":
         default=False, action="store_true"
     )
 
+    ap.add_argument(
+        "-c", "--count", help="Generate multiple passwords",
+        type=int, default=1, metavar="INT"
+    )
+
     args = ap.parse_args()
     pw_gen = PwGenerator()      # initialise the class
 
@@ -34,10 +39,11 @@ if __name__ == "__main__":
     # generate a password of supplied length
     # ./pw.py -l 50 --> returns a pw 50 characters long
     
-    pw = pw_gen.generate(       # generate a password
-        length=args.len,
-        include_numbers=args.num,
-        include_special=args.spl
-    )
-
-    print(pw)                   # print the password
+    for _ in range(args.count):
+        print(
+            pw_gen.generate(       # generate a password
+                length=args.len,
+                include_numbers=args.num,
+                include_special=args.spl
+            )
+        )
