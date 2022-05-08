@@ -10,7 +10,8 @@ class PwGenerator:
     def generate(
             self,
             length=15,
-            include_numbers=False
+            include_numbers=False,
+            include_special=False     
         ):
         """
         Returns a random password

@@ -21,6 +21,11 @@ if __name__ == "__main__":
         "-n", "--num", help="Include numericals",
         default=False, action="store_true"
     )
+    
+    ap.add_argument(
+        "-s", "--spl", help="Include special characters",
+        default=False, action="store_true"
+    )
 
     args = ap.parse_args()
     pw_gen = PwGenerator()      # initialise the class
@@ -31,7 +36,8 @@ if __name__ == "__main__":
     
     pw = pw_gen.generate(       # generate a password
         length=args.len,
-        include_numbers=args.num
+        include_numbers=args.num,
+        include_special=args.spl
     )
 
     print(pw)                   # print the password
