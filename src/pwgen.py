@@ -3,6 +3,7 @@ import random
 UPPER_CASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 LOWER_CASE = "abcdefghijklmnopqrstuvwxyz"
 NUMBERS = "0123456789"
+SPECIAL = "!@#$%^&*()_+-={}[]\|<>,./?~"
 
 class PwGenerator:
 
@@ -19,8 +20,11 @@ class PwGenerator:
         """
         char_set = UPPER_CASE + LOWER_CASE
         
-          if include_numbers is True:
+        if include_numbers is True:
             char_set = char_set + NUMBERS
+            
+        if include_special is True:
+            char_set = char_set + SPECIAL
         
         chars = list(char_set)
         
